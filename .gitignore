@@ -1,0 +1,15 @@
+# Ignore those folders
+.vs/
+Source/bin/
+Source/obj/
+.venv/
+venv/
+__pycache__/
+*.pyc
+.tempmediaStorage/
+bin/
+obj/
+*.user
+*.suo
+*.tmp
+*.log

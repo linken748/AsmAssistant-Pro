@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011"
+                 xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+    <Metadata>
+        <Identity Id="AsmAssistantPro.link.7a8b9c0d-1e2f-4a5b-9c8d-0e1f2a3b4c5d"
+                  Version="1.0.0"
+                  Language="en-US"
+                  Publisher="link"/>
+        <DisplayName>AsmAssistant Pro</DisplayName>
+        <Description xml:space="preserve">为 Visual Studio 打造的高性能轻量级汇编开发助手。提供原生语法精准彩色高亮，深度集成 x86/x64 与 MASM 智能代码实时自动补全、指令释义与寄存器提示，零后台进程，开箱即用。</Description>
+        <Tags>assembly,asm,x86,x64,masm,intel,completion,intellisense,syntax highlighting</Tags>
+    </Metadata>
+    <Installation>
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[17.0,)">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
+        <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[17.0,)">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
+        <InstallationTarget Id="Microsoft.VisualStudio.Enterprise" Version="[17.0,)">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
+    </Installation>
+    <Dependencies>
+        <Dependency Id="Microsoft.Framework.NDP"
+                    DisplayName="Microsoft .NET Framework"
+                    d:Source="Manual"
+                    Version="[4.7.2,)"/>
+    </Dependencies>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor"
+                      Version="[17.0,)"
+                      DisplayName="Visual Studio core editor"/>
+    </Prerequisites>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.MefComponent"
+               d:Source="Project"
+               d:ProjectName="%CurrentProject%"
+               Path="|%CurrentProject%|"/>
+        <Asset Type="Microsoft.VisualStudio.VsPackage"
+               d:Source="Project"
+               d:ProjectName="%CurrentProject%"
+               Path="|%CurrentProject%;PkgdefProjectOutputGroup|"/>
+    </Assets>
+</PackageManifest>
