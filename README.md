@@ -5,6 +5,7 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/linken748/AsmAssistant-Pro/releases/latest"><img src="https://img.shields.io/github/v/release/linken748/AsmAssistant-Pro?color=blue&label=Release" alt="Latest Release"></a>
   <img src="https://img.shields.io/badge/Visual%20Studio-2022%20(v17.0+)-blue?logo=visualstudio" alt="Visual Studio 2022">
   <img src="https://img.shields.io/badge/Architecture-x86%20%2F%20x64-green" alt="Architecture">
   <img src="https://img.shields.io/badge/Assembler-MASM-orange" alt="MASM">
@@ -55,7 +56,7 @@
 ### 方式一：一键双击安装（推荐）
 
 本仓库已预先编译打包好安装包，无需配置编译环境：
-1. 从仓库下载根目录下的安装包：[`AsmAssistant_Pro.vsix`](./AsmAssistant_Pro.vsix)。
+1. 前往 **[GitHub Releases 页面](https://github.com/linken748/AsmAssistant-Pro/releases/latest)** 或直接点击下载：👉 **[AsmAssistant_Pro.vsix](https://github.com/linken748/AsmAssistant-Pro/releases/latest/download/AsmAssistant_Pro.vsix)**。
 2. 确保已关闭运行中的 Visual Studio。
 3. **双击 `AsmAssistant_Pro.vsix`**，在弹出的 VSIX 安装器窗口中点击 **Install**。
 4. 安装完成后启动 Visual Studio 2022 即可自动生效！
